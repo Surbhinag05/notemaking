@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Note App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="app-header">
+    <div class="logo">📝 My Note App</div>
+    <nav>
+      <button id="homeBtn" class="nav-btn">Home</button>
+      <button id="viewNotesBtn" class="nav-btn">View Notes</button>
+      <input type="text" id="searchInput" placeholder="Search Notes..." class="search-bar">
+    </nav>
+  </header>
+
+  <div class="main-content">
+    <input type="text" id="titleInput" placeholder="Enter Note Title">
+    <textarea id="descInput" placeholder="Enter Note Description"></textarea>
+    <select id="categorySelect">
+      <option value="">Choose Category</option>
+      <option value="Work">Work</option>
+      <option value="Personal">Personal</option>
+      <option value="Study">Study</option>
+    </select>
+    <button id="addNoteBtn">Add Note</button>
+    <div id="notesContainer"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
